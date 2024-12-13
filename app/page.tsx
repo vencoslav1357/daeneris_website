@@ -35,7 +35,7 @@ export default function Home() {
         } else {
           toast.error('Failed to delete account. Please check your credentials.');
         }
-      } catch (error) {
+      } catch {
         toast.error('Server communication error occurred');
       }
     };
