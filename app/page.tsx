@@ -4,12 +4,24 @@ import Image from "next/image";
 import { useState } from "react";
 import { Toaster, toast } from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
+import { Button, buttonVariants } from "@/components/ui/button"
+import { cn } from "@/lib/utils";
 
 export default function Home() {
     const router = useRouter();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [showConfirm, setShowConfirm] = useState(false);
 
     const handleDelete = async () => {
       try {
@@ -28,7 +40,6 @@ export default function Home() {
           toast.success('Account successfully deleted');
           setEmail("");
           setPassword("");
-          // Redirect to home page after 5 seconds
           setTimeout(() => {
             router.push('/');
           }, 5000);
@@ -41,7 +52,7 @@ export default function Home() {
     };
   
     return (
-      <div className="min-h-screen bg-[#fff] flex flex-col items-center justify-center p-6 ">
+      <div className="min-h-screen bg-[#fff] flex flex-col items-center justify-center p-6">
         <Toaster position="top-center" />
         <div className="w-full max-w-md space-y-8 bg-[#151515] p-8 rounded-2xl shadow-[black] shadow-lg">
           <div className="flex flex-col items-center">
@@ -74,35 +85,31 @@ export default function Home() {
               className="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:border-[#1900ff] focus:ring-2 focus:ring-[#1900ff] outline-none transition-all"
             />
           </div>
-  
-          {!showConfirm ? (
-            <button
-              onClick={() => setShowConfirm(true)}
-              className="w-full mt-6 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition-colors duration-200"
-            >
-              Continue with Account Deletion
-            </button>
-          ) : (
-            <div className="space-y-4 mt-6">
-              <p className="text-red-400 text-sm text-center">
-                Are you sure you want to delete your account?
-              </p>
-              <div className="flex gap-4">
-                <button
-                  onClick={() => setShowConfirm(false)}
-                  className="flex-1 px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white font-medium rounded-lg transition-colors duration-200"
-                >
-                  Cancel
-                </button>
-                <button
-                  onClick={handleDelete}
-                  className="flex-1 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition-colors duration-200"
-                >
-                  Confirm Deletion
-                </button>
-              </div>
-            </div>
-          )}
+
+          <AlertDialog>
+            <AlertDialogTrigger asChild>
+              <Button variant="destructive" className="w-full">
+                Delete your account
+              </Button>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+                <AlertDialogDescription>
+                  This action cannot be undone. This will permanently delete your
+                  account and remove your data from our servers.
+                </AlertDialogDescription>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogCancel>Cancel</AlertDialogCancel>
+                <AlertDialogAction
+                  className={cn(buttonVariants({ variant:"destructive"}))}
+                  onClick={handleDelete}>
+                  Continue
+                </AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
         </div>
       </div>
     );
