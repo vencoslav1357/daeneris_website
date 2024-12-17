@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="1005.114"
+   height="1005.1144"
+   viewBox="0 0 1005.114 1005.1144"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6">
+    <linearGradient
+       id="linearGradient872-5">
+      <stop
+         style="stop-color:#0000ff;stop-opacity:0;"
+         offset="0"
+         id="stop896" />
+      <stop
+         style="stop-color:#1900ff;stop-opacity:0;"
+         offset="1"
+         id="stop898" />
+    </linearGradient>
+    <radialGradient
+       xlink:href="#linearGradient872-5"
+       id="radialGradient874"
+       cx="960"
+       cy="488.8707"
+       fx="960"
+       fy="488.8707"
+       r="393.85617"
+       gradientTransform="matrix(1.276,0,0,1.2760123,-722.40645,-121.25394)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <path
+     style="opacity:1;mix-blend-mode:normal;fill:url(#radialGradient874);fill-opacity:1;stroke:#000000;stroke-width:41.5588;stroke-opacity:0"
+     id="path289"
+     d="M 984.33459,502.55746 A 481.7774,481.7774 0 0 1 513.16782,984.21801 481.7774,481.7774 0 0 1 21.24716,523.77357 481.7774,481.7774 0 0 1 470.74589,21.831442 481.7774,481.7774 0 0 1 982.466,460.16641 Z" />
+  <path
+     style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:28.4474;stroke-opacity:0"
+     id="path895"
+     d="M 832.34076,502.56161 A 329.78125,329.78125 0 0 1 509.82259,832.26287 329.78125,329.78125 0 0 1 173.09818,517.08424 329.78125,329.78125 0 0 1 480.78437,173.50005 329.78125,329.78125 0 0 1 831.06169,473.54453 Z" />
+  <path
+     id="path467"
+     style="fill:#190ff0;fill-opacity:1;stroke:#000000;stroke-width:28.4474;stroke-opacity:0"
+     d="M 831.09301,569.69778 A 329.78125,329.78125 0 0 1 509.71413,883.24465 329.78125,329.78125 0 0 1 173.88992,575.897 329.78125,329.78125 0 0 0 172.98953,610.04348 329.78125,329.78125 0 0 0 509.71413,925.22317 329.78125,329.78125 0 0 0 832.23171,595.522 Z" />
+</svg>

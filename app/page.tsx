@@ -57,7 +57,7 @@ export default function Home() {
         <div className="w-full max-w-md space-y-8 bg-[#151515] p-8 rounded-2xl shadow-[black] shadow-lg">
           <div className="flex flex-col items-center">
             <Image
-              src="/images/DaenerisLogoBlue.png"
+              src="/images/Daeneris_logo_svg.svg"
               width={200}
               height={200}
               alt="logo"

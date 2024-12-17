@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
+import Image from "next/image"
 
 import { cn } from "@/lib/utils"
 import { Icons } from "@/components/ui/icons"
@@ -65,10 +66,15 @@ export function NavigationHeader() {
                         <li className="row-span-3">
                             <NavigationMenuLink asChild>
                             <a
-                                className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                                className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 pt-1 no-underline outline-none focus:shadow-md"
                                 href="/"
                             >
-                                <Icons.logo className="h-6 w-6" />
+                                <Image 
+                                  src="/images/Daeneris_logo_svg.svg"
+                                  alt="logo"
+                                  width={80}
+                                  height={80}
+                                  />
                                 <div className="mb-2 mt-4 text-lg font-medium">
                                 Daeneris AI
                                 </div>
