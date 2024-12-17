@@ -9,7 +9,7 @@ export default function PrivacyPolicyPage() {
                         
                         <div className="space-y-4">
                             <p>
-                            Daeneris ("we", "us", or "our") respects your privacy and is committed to protecting your personal data. 
+                            DaenerisAI ("we", "us", or "our") respects your privacy and is committed to protecting your personal data. 
                             This Privacy Policy explains how we collect, use, and share your information when you use our mobile application ("App").
                             </p>
                             <p>By using the App, you agree to the terms of this Privacy Policy. If you do not agree, please discontinue the use of the App.</p>

@@ -11,7 +11,7 @@ export default function TermsAndConditionsPage() {
                         <div className="space-y-4">
                             <p>
                                 These Terms and Conditions ("Terms", "Agreement") are a legally binding agreement between you 
-                                ("User", "you", or "your") and Daeneris ("we", "us", or "our"), governing your access to and use of 
+                                ("User", "you", or "your") and DaenerisAI ("we", "us", or "our"), governing your access to and use of 
                                 our mobile application ("App") and services provided therein.
                             </p>
 
