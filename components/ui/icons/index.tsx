@@ -1,4 +1,4 @@
-import { UserCircle, Menu, Moon, Sun, Laptop } from "lucide-react"
+import { Menu, Moon, Sun, Laptop } from "lucide-react"
 import Image from "next/image"
 
 const DaenerisLogo = () => (
