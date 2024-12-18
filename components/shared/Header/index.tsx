@@ -14,6 +14,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
+import { Icons } from "@/components/ui/icons"
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -68,12 +69,7 @@ export function NavigationHeader() {
                                 className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 pt-1 no-underline outline-none focus:shadow-md"
                                 href="/"
                             >
-                                <Image 
-                                  src="/images/Daeneris_logo_svg.svg"
-                                  alt="logo"
-                                  width={80}
-                                  height={80}
-                                  />
+                                <Icons.logo />
                                 <div className="mb-2 mt-4 text-lg font-medium">
                                 Daeneris AI
                                 </div>
