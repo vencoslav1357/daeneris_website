@@ -117,7 +117,7 @@ export default function PrivacyPolicyPage() {
                             </section>
 
                             <section className="space-y-2">
-                                <h2 className="text-xl font-semibold text-white">9. Children's Privacy</h2>
+                                <h2 className="text-xl font-semibold text-white">9. Children&apos;s Privacy</h2>                                
                                 <div className="pl-4">
                                     <p>The App is not intended for users under the age of 16. We do not knowingly collect data from children under this age.</p>
                                 </div>
