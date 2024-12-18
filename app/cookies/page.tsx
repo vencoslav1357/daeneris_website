@@ -9,7 +9,7 @@ export default function Cookiespage() {
                         
                         <div className="space-y-4">
                             <p>
-                                This Cookies Policy ("Policy") explains how DaenerisAI ("we", "us", or "our") uses cookies and similar technologies on our mobile application ("App") to enhance your experience and ensure proper functionality.
+                                This Cookies Policy (&quot;Policy&quot;) explains how DaenerisAI (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) uses cookies and similar technologies on our mobile application (&quot;App&quot;) to enhance your experience and ensure proper functionality.
                             </p>
 
                             <section className="space-y-2">
@@ -54,7 +54,7 @@ export default function Cookiespage() {
                                 <div className="pl-4">
                                     <p>5.1. You can manage or disable cookies through your device settings.</p>
                                     <p>5.2. Note that disabling certain cookies may affect the functionality of the App.</p>
-                                    <p>5.3. To learn more about managing cookies, refer to your browser's help documentation.</p>
+                                    <p>5.3. To learn more about managing cookies, refer to your browser&apos;s help documentation.</p>
                                 </div>
                             </section>
 

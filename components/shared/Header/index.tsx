@@ -5,7 +5,6 @@ import Link from "next/link"
 import Image from "next/image"
 
 import { cn } from "@/lib/utils"
-import { Icons } from "@/components/ui/icons"
 import {
   NavigationMenu,
   NavigationMenuContent,

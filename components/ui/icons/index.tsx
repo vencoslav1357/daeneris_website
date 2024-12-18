@@ -1,4 +1,4 @@
-import { LucideProps, UserCircle, Menu, Moon, Sun, Laptop } from "lucide-react"
+import { UserCircle, Menu, Moon, Sun, Laptop } from "lucide-react"
 
 export const Icons = {
   logo: UserCircle, 

@@ -10,9 +10,9 @@ export default function TermsAndConditionsPage() {
                         
                         <div className="space-y-4">
                             <p>
-                                These Terms and Conditions ("Terms", "Agreement") are a legally binding agreement between you 
-                                ("User", "you", or "your") and DaenerisAI ("we", "us", or "our"), governing your access to and use of 
-                                our mobile application ("App") and services provided therein.
+                                These Terms and Conditions (&quot;Terms&quot;, &quot;Agreement&quot;) are a legally binding agreement between you 
+                                (&quot;User&quot;, &quot;you&quot;, or &quot;your&quot;) and DaenerisAI (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;), governing your access to and use of 
+                                our mobile application (&quot;App&quot;) and services provided therein.
                             </p>
 
                             <section className="space-y-2">
@@ -40,7 +40,7 @@ export default function TermsAndConditionsPage() {
                                     Spotify, and perform additional tasks.</p>
                                     <p>3.2. Premium features include generating images, Gmail notifications, floating bubbles, and 
                                     offline functionalities.</p>
-                                    <p>3.3. The AI assistant's responses are generated automatically and may not always be accurate. 
+                                    <p>3.3. The AI assistant&apos;s responses are generated automatically and may not always be accurate. 
                                     We are not liable for any consequences arising from the use of these responses.</p>
                                 </div>
                             </section>
@@ -113,7 +113,7 @@ export default function TermsAndConditionsPage() {
                             <section className="space-y-2">
                                 <h2 className="text-xl font-semibold text-white">9. Limitation of Liability</h2>
                                 <div className="pl-4">
-                                    <p>9.1. The App is provided "as is". We make no warranties about its accuracy, reliability, or 
+                                    <p>9.1. The App is provided &quot;as is&quot;. We make no warranties about its accuracy, reliability, or 
                                     suitability.</p>
                                     <p>9.2. We are not responsible for any damages resulting from your use of the App, including:</p>
                                     <ul className="list-disc pl-6">

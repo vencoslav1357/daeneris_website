@@ -9,8 +9,8 @@ export default function PrivacyPolicyPage() {
                         
                         <div className="space-y-4">
                             <p>
-                            DaenerisAI ("we", "us", or "our") respects your privacy and is committed to protecting your personal data. 
-                            This Privacy Policy explains how we collect, use, and share your information when you use our mobile application ("App").
+                            DaenerisAI (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) respects your privacy and is committed to protecting your personal data. 
+                            This Privacy Policy explains how we collect, use, and share your information when you use our mobile application (&quot;App&quot;).
                             </p>
                             <p>By using the App, you agree to the terms of this Privacy Policy. If you do not agree, please discontinue the use of the App.</p>
 
@@ -69,7 +69,7 @@ export default function PrivacyPolicyPage() {
                                     <ul className="list-disc pl-6">
                                         <li>Access your personal data and request a copy.</li>
                                         <li>Correct inaccurate or incomplete data.</li>
-                                        <li>Request the deletion of your data (<em>"Right to be Forgotten"</em>).</li>
+                                        <li>Request the deletion of your data (&quot;Right to be Forgotten&quot;).</li>
                                         <li>Restrict or object to the processing of your data.</li>
                                         <li>Data portability: Receive your data in a structured format.</li>
                                         <li>File a complaint with a data protection authority.</li>
