@@ -14,6 +14,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { Icons } from "@/components/ui/icons"
+import { ModeToggle } from "@/components/ui/theme-toggle"
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -55,7 +56,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationHeader() {
   return (
-    <div className="fixed w-full h-[5vh] p-2">
+    <nav className="fixed w-full pr-[15vw] pl-[15vw] h-[5vh] p-2 flex justify-between items-center dark:bg-[#151515]/70 bg-slate-300/70 backdrop-blur-sm border-b-[1px] border-gray-800 dark:border-gray-200">
         <NavigationMenu>
             <NavigationMenuList>
                 <NavigationMenuItem>
@@ -135,8 +136,11 @@ export function NavigationHeader() {
                     </Link>
                 </NavigationMenuItem>
             </NavigationMenuList>
-        </NavigationMenu>  
-    </div>
+        </NavigationMenu> 
+        <div className="flex items-center justify-center">
+          <ModeToggle />
+        </div> 
+    </nav>
   
   )
 }
