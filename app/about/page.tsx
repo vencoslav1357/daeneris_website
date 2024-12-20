@@ -26,7 +26,7 @@ export default function AboutPage() {
 
                 <div className="dark:text-gray-400 text-[#151515] space-y-6 pr-4">
                     <p className="text-base">
-                        Welcome to DaenerisAI, where we're revolutionizing personal AI assistance through 
+                        Welcome to DaenerisAI, where we&apos;re revolutionizing personal AI assistance through 
                         innovation, security, and user-centric design. Our journey began in Prague and 
                         continues to expand globally.
                     </p>
