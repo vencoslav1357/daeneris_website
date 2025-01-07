@@ -56,7 +56,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationHeader() {
   return (
-    <nav className="fixed w-full pr-[15vw] pl-[15vw] h-[5vh] p-2 flex justify-between items-center dark:bg-[#151515]/70 bg-slate-300/70 backdrop-blur-sm border-b-[1px] border-gray-800 dark:border-gray-200">
+    <nav className="fixed w-full pr-[15vw] z-10 pl-[15vw] h-[5vh] p-2 flex justify-between items-center dark:bg-[#151515]/70 bg-slate-300/70 backdrop-blur-sm border-b-[1px] border-gray-800 dark:border-gray-200">
         <NavigationMenu>
             <NavigationMenuList>
                 <NavigationMenuItem>

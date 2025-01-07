@@ -559,144 +559,91 @@ export const termsData = [
 
 export const aboutUsData = [
   {
-    id: "our-story",
-    title: "Our Story",
+    id: "intro",
+    title: "Introducing DaenerisAI",
     content: [
       {
         subtitle: "",
-        text: "Founded in 2023 by a team of AI enthusiasts and software engineers in Prague, DaenerisAI emerged from a shared vision to make artificial intelligence more accessible and personal. What started as a weekend project between college friends has evolved into a cutting-edge AI assistant used by thousands globally."
+        text: "DaenerisAI is an advanced personal AI assistant that combines cutting-edge artificial intelligence technology with intuitive controls. Similar to Jarvis from Iron Man movies, DaenerisAI will become your indispensable digital companion."
       }
     ]
   },
   {
-    id: "mission",
-    title: "Our Mission",
+    id: "key-features",
+    title: "Key Features",
     content: [
       {
-        subtitle: "",
-        text: "At DaenerisAI, we believe in creating AI solutions that enhance daily life while maintaining user privacy and data security. Our mission is to develop AI technology that feels personal, understands context, and delivers real value to our users."
-      }
-    ]
-  },
-  {
-    id: "team",
-    title: "Our Team",
-    content: [
-      {
-        subtitle: "Leadership:",
-        text: "Our company is led by CEO Martin Novák, a former Google AI researcher, alongside CTO Jana Svobodová, who brings expertise from her years at OpenAI and DeepMind.",
+        subtitle: "Voice Control",
+        text: "Natural communication using advanced speech-to-text and text-to-speech technologies."
       },
       {
-        subtitle: "Development Team:",
-        text: "Our core team consists of 15 passionate developers, AI researchers, and UX designers, all sharing a commitment to pushing the boundaries of what's possible with AI technology."
-      }
-    ]
-  },
-  {
-    id: "journey",
-    title: "Our Journey",
-    content: [
-      {
-        subtitle: "2023:",
-        bullets: [
-          "Founded in Prague, Czech Republic",
-          "Initial prototype development",
-          "First round of seed funding secured",
-          "Beta release with 1,000 early adopters"
-        ]
+        subtitle: "Smart Integration",
+        text: "Seamless cooperation with Google Calendar, Gmail, Spotify, and other services."
       },
       {
-        subtitle: "2024:",
-        bullets: [
-          "Official launch of DaenerisAI assistant",
-          "Integration with major platforms including Spotify and Gmail",
-          "Reached 100,000 active users",
-          "Opened new office in Berlin"
-        ]
+        subtitle: "Smart Home",
+        text: "Complete control of your smart home through Google Home integration."
       }
     ]
   },
   {
     id: "technology",
-    title: "Our Technology",
+    title: "Technology",
+    content: [
+      {
+        subtitle: "Artificial Intelligence",
+        text: "We utilize the latest GPT-4 model for natural understanding and intelligent responses."
+      },
+      {
+        subtitle: "Speech Processing",
+        text: "Advanced algorithms for speech-to-text and text-to-speech ensure fluid communication."
+      }
+    ]
+  },
+  {
+    id: "integrations",
+    title: "Integrations",
     content: [
       {
         subtitle: "",
-        text: "DaenerisAI combines cutting-edge large language models with proprietary algorithms for context understanding and personalization. Our technology stack includes:"
-      },
-      {
-        subtitle: "",
         bullets: [
-          "Advanced natural language processing",
-          "Real-time learning and adaptation",
-          "Multi-platform integration capabilities",
-          "Privacy-first architecture"
+          "Google Calendar - manage your schedule",
+          "Gmail - organize emails",
+          "Spotify - control music",
+          "Google Home - smart home control",
+          "And other services for maximum productivity"
         ]
       }
     ]
   },
   {
-    id: "community",
-    title: "Our Community",
+    id: "customization",
+    title: "Customization",
     content: [
       {
         subtitle: "",
-        text: "We're proud to have built a vibrant community of users and developers who contribute to our growth. Join our community on:"
-      },
-      {
-        subtitle: "Discord:",
-        textLink: {
-          text: "Join DaenerisAI Discord",
-          href: "https://discord.gg/daenerisai"
-        }
-      },
-      {
-        subtitle: "GitHub:",
-        textLink: {
-          text: "Contribute to our open-source projects",
-          href: "https://github.com/daenerisai"
-        }
-      }
-    ]
-  },
-  {
-    id: "future",
-    title: "Looking Ahead",
-    content: [
-      {
-        subtitle: "",
-        text: "As we continue to grow, our focus remains on innovation and user experience. Our roadmap includes:"
+        text: "Every user can customize the assistant's properties according to their preferences:"
       },
       {
         subtitle: "",
         bullets: [
-          "Advanced emotion recognition capabilities",
-          "Expanded language support",
-          "Enhanced cross-platform integration",
-          "Revolutionary AI-driven personal assistance features"
+          "Personality and communication style",
+          "Voice and speech tone",
+          "Preferred services and integration",
+          "Assistant's proactivity level",
+          "Notification and alert methods"
         ]
       }
     ]
   },
   {
-    id: "contact",
-    title: "Get in Touch",
+    id: "security",
+    title: "Security",
     content: [
       {
         subtitle: "",
-        text: "We're always excited to hear from our users and potential partners. Reach out to us at:"
-      },
-      {
-        subtitle: "Email:",
-        textLink: {
-          text: "daenerisai@gmail.com",
-          href: "mailto:daenerisai@gmail.com"
-        }
-      },
-      {
-        subtitle: "Location:",
-        text: "Prague, Czech Republic"
+        text: "Your privacy is our priority. We implement state-of-the-art security measures to protect your data and provide full transparency regarding their use."
       }
     ]
-  }
+  },
 ];
