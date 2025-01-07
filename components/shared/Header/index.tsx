@@ -122,7 +122,7 @@ export function NavigationHeader() {
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/privacy-policy" legacyBehavior passHref>
+                    <Link href="/privacy" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                         Privacy Policy
                         </NavigationMenuLink>
