@@ -55,11 +55,39 @@ const components: { title: string; href: string; description: string }[] = [
 ]
 
 export function NavigationHeader() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
+
+  const handleNavigationClick = () => {
+    setIsMobileMenuOpen(false);
+  }
+
   return (
-    <nav className="fixed w-full pr-[15vw] z-10 pl-[15vw] h-[5vh] p-2 flex justify-between items-center dark:bg-[#151515]/70 bg-slate-300/70 backdrop-blur-sm border-b-[1px] border-gray-800 dark:border-gray-200">
+    <nav className="fixed w-full z-20 h-[60px] lg:h-[5vh] flex items-center dark:bg-[#151515]/70 bg-slate-300/70 backdrop-blur-sm border-b-[1px] border-gray-800 dark:border-gray-200 px-4 lg:px-[15vw]">
+        {/* Hamburger pro mobil */}
+        <button 
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="lg:hidden absolute left-1/2 -translate-x-1/2 p-2"
+        >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
+                    d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} 
+                />
+            </svg>
+        </button>
+
+        {/* Desktop navigace */}
+        <div className={`
+          fixed lg:relative top-[60px] lg:top-0 
+          w-full lg:w-auto h-[calc(100vh-60px)] lg:h-auto
+          bg-slate-300/95 dark:bg-[#151515]/95 lg:bg-transparent
+          flex items-center justify-center
+          transform transition-transform duration-300
+          ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0
+          left-0
+      `}>         
         <NavigationMenu>
             <NavigationMenuList>
-                <NavigationMenuItem>
+                    <NavigationMenuItem>
                     <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
                     <NavigationMenuContent>
                         <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -68,12 +96,13 @@ export function NavigationHeader() {
                             <Link
                                 className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 pt-1 no-underline outline-none focus:shadow-md"
                                 href="/"
+                                onClick={handleNavigationClick}
                             >
                                 <Icons.logo />
-                                <div className="mb-2 mt-4 text-lg font-medium">
+                                <div className="mb-2 mt-4 text-lg font-medium" onClick={handleNavigationClick}>
                                 About Daeneris AI
                                 </div>
-                                <p className="text-sm leading-tight text-muted-foreground">
+                                <p className="text-sm leading-tight text-muted-foreground" onClick={handleNavigationClick}>
                                 Jarvis alike AI assistant for your business, personal life and better efficiency with technologies.
                                 </p>
                             </Link>
@@ -92,14 +121,15 @@ export function NavigationHeader() {
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger>Documentation</NavigationMenuTrigger>
+                <NavigationMenuTrigger>Documentation</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                        {components.map((component) => (
+                    <ul className="grid w-[400px] gap-3 p-6 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                    {components.map((component) => (
                             <ListItem
                             key={component.title}
                             title={component.title}
                             href={component.href}
+                            onClick={handleNavigationClick}
                             >
                             {component.description}
                             </ListItem>
@@ -107,29 +137,29 @@ export function NavigationHeader() {
                         </ul>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
-                    <Link href="/delete-account" legacyBehavior passHref>
+                <NavigationMenuItem onClick={handleNavigationClick}>
+                <Link href="/delete-account" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                         Delete Account
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
-                    <Link href="/cookies" legacyBehavior passHref>
+                <NavigationMenuItem onClick={handleNavigationClick}>
+                <Link href="/cookies" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                         Cookies
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
-                    <Link href="/privacy" legacyBehavior passHref>
+                <NavigationMenuItem onClick={handleNavigationClick}>
+                <Link href="/privacy" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                         Privacy Policy
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
-                    <Link href="/terms&conditions" legacyBehavior passHref>
+                <NavigationMenuItem onClick={handleNavigationClick}>
+                <Link href="/terms&conditions" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                         Terms&Conditions
                         </NavigationMenuLink>
@@ -137,9 +167,11 @@ export function NavigationHeader() {
                 </NavigationMenuItem>
             </NavigationMenuList>
         </NavigationMenu> 
-        <div className="flex items-center justify-center">
-          <ModeToggle />
         </div> 
+        <div className="flex-1 md:flex-none flex justify-end mr-[2vw]">
+            <ModeToggle />
+        </div>
+
     </nav>
   
   )

@@ -2,19 +2,20 @@
 import { ContentSection } from '@/components/ContentPages/Section';
 import { Sidebar } from '@/components/ContentPages/SideBar';
 import { privacyPolicyData } from '@/constants';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 export default function PrivacyPolicyPage() {
     const contentRef = useRef<HTMLDivElement>(null);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     
     return (
-        <section className="w-screen h-screen flex items-start justify-start pb-[5vh] dark:bg-[#151515] bg-slate-100">
-            <Sidebar sections={privacyPolicyData} contentRef={contentRef} />
+        <section className="relative w-full min-h-screen flex flex-col  md:flex-row items-start justify-start pb-[5vh] dark:bg-[#151515] bg-slate-100">
+            <Sidebar sections={privacyPolicyData} contentRef={contentRef} isOpen={isMenuOpen} setIsOpen={setIsMenuOpen}/>
             
             <div 
                 ref={contentRef}
-                className="w-[85vw] h-[100vh] flex flex-col dark:bg-[#151515] bg-slate-100 border-r-[1px] border-gray-800 dark:border-gray-200 gap-[5vh] p-[10vw] overflow-y-auto"
-            >
+                className=" mt-[15%] flex-1 min-h-screen flex flex-col gap-8 p-6 md:p-10 lg:p-[10vw] overflow-y-auto"
+                >
                 <div className="flex flex-col items-center justify-center">
                     <h1 className="text-3xl font-bold dark:text-white text-[#151515] mb-2 text-center">
                         Privacy Policy

@@ -20,8 +20,9 @@ export default function AboutPage() {
                     <Image
                         src="/images/Daeneris_logo_svg.svg"
                         alt="AI Assistant"
-                        width={400}
-                        height={400}
+                        width={100}
+                        height={100}
+                        className="transform translate-y-[50%]"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-black dark:text-white">
                         <motion.h1 
