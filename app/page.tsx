@@ -49,7 +49,7 @@ export default function AboutPage() {
                         className="text-lg leading-relaxed dark:text-gray-300 text-gray-700 max-w-3xl mx-auto text-center mb-16"
                     >
                         Welcome to DaenerisAI, your advanced personal AI assistant that seamlessly integrates into your daily life. 
-                        Inspired by concepts like Jarvis, we&apos;ve created an intelligent companion that combines cutting-edge AI technology 
+                        Inspired by concepts like Jarvis, we`&apos`;ve created an intelligent companion that combines cutting-edge AI technology 
                         with practical functionality to enhance your productivity and lifestyle.
                     </motion.p>
                     
