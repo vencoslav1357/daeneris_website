@@ -592,7 +592,7 @@ export const aboutUsData = [
     content: [
       {
         subtitle: "Artificial Intelligence",
-        text: "We utilize the latest GPT-4 model for natural understanding and intelligent responses."
+        text: "We utilize the latest GPT-4o model for natural understanding and intelligent responses."
       },
       {
         subtitle: "Speech Processing",
