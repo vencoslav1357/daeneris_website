@@ -1,6 +1,5 @@
 'use client';
 import { ContentSection } from '@/components/ContentPages/Section';
-import { Sidebar } from '@/components/ContentPages/SideBar';
 import { aboutUsData } from '@/constants';
 import { useRef } from 'react';
 import Image from 'next/image';
