@@ -1,116 +1,48 @@
-"use client";
+'use client';
+import { ContentSection } from '@/components/ContentPages/Section';
+import { Sidebar } from '@/components/ContentPages/SideBar';
+import { aboutUsData } from '@/constants';
+import { useRef } from 'react';
 
-import Image from "next/image";
-import { useState } from "react";
-import { Toaster, toast } from 'react-hot-toast';
-import { useRouter } from 'next/navigation';
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog"
-import { Button, buttonVariants } from "@/components/ui/button"
-import { cn } from "@/lib/utils";
-
-export default function Home() {
-    const router = useRouter();
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-
-    const handleDelete = async () => {
-      try {
-        const response = await fetch("https://centrumservers.com/delete-account", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ 
-            email: email, 
-            password: password 
-          }),
-        });
+export default function AboutPage() {
+    const contentRef = useRef<HTMLDivElement>(null);
     
-        if (response.ok) {
-          toast.success('Account successfully deleted');
-          setEmail("");
-          setPassword("");
-          setTimeout(() => {
-            router.push('/');
-          }, 5000);
-        } else {
-          toast.error('Failed to delete account. Please check your credentials.');
-        }
-      } catch {
-        toast.error('Server communication error occurred');
-      }
-    };
-  
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center p-6">
-        <Toaster position="top-center" />
-        <div className="w-full max-w-md space-y-8 bg-[#151515] p-8 rounded-2xl shadow-[black] shadow-lg">
-          <div className="flex flex-col items-center">
-            <Image
-              src="/images/Daeneris_logo_svg.svg"
-              width={200}
-              height={200}
-              alt="logo"
-              className="mb-6"
-            />
-            <h1 className="text-3xl font-bold text-white mb-2">Delete Account</h1>
-            <p className="text-gray-400 text-center mb-8">
-              This action is irreversible. Please confirm your credentials.
-            </p>
-          </div>
-  
-          <div className="space-y-4">
-            <input
-              type="email"
-              placeholder="Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:border-[#1900ff] focus:ring-2 focus:ring-[#1900ff] outline-none transition-all"
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:border-[#1900ff] focus:ring-2 focus:ring-[#1900ff] outline-none transition-all"
-            />
-          </div>
+        <section className="w-screen h-screen flex items-start justify-start pb-[5vh] dark:bg-[#151515] bg-slate-100">
+            <Sidebar sections={aboutUsData} contentRef={contentRef} />
+            
+            <div 
+                ref={contentRef}
+                className="w-[85vw] h-[100vh] flex flex-col dark:bg-[#151515] bg-slate-100 border-r-[1px] border-gray-800 dark:border-gray-200 gap-[5vh] p-[10vw] overflow-y-auto"
+            >
+                <div className="flex flex-col items-center justify-center">
+                    <h1 className="text-3xl font-bold dark:text-white text-[#151515] mb-2 text-center">
+                        About Us
+                    </h1>
+                    <p className="pb-2 w-[60%] border-b-2 border-b-gray-900 dark:border-b-gray-400 text-sm italic text-center">
+                        Last updated: 12/01/2024
+                    </p>
+                </div>
 
-          <AlertDialog>
-            <AlertDialogTrigger asChild>
-              <Button variant="destructive" className="w-full">
-                Delete your account
-              </Button>
-            </AlertDialogTrigger>
-            <AlertDialogContent>
-              <AlertDialogHeader>
-                <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
-                <AlertDialogDescription>
-                  This action cannot be undone. This will permanently delete your
-                  account and remove your data from our servers.
-                </AlertDialogDescription>
-              </AlertDialogHeader>
-              <AlertDialogFooter>
-                <AlertDialogCancel>Cancel</AlertDialogCancel>
-                <AlertDialogAction
-                  className={cn(buttonVariants({ variant:"destructive"}))}
-                  onClick={handleDelete}>
-                  Continue
-                </AlertDialogAction>
-              </AlertDialogFooter>
-            </AlertDialogContent>
-          </AlertDialog>
-        </div>
-      </div>
+                <div className="dark:text-gray-400 text-[#151515] space-y-6 pr-4">
+                    <p className="text-base">
+                        Welcome to DaenerisAI, where we&apos;re revolutionizing personal AI assistance through 
+                        innovation, security, and user-centric design. Our journey began in Prague and 
+                        continues to expand globally.
+                    </p>
+                    
+                    <div className="space-y-4 flex flex-col items-start justify-center gap-[5vh]">
+                        {aboutUsData.map((section) => (
+                            <ContentSection
+                                key={section.id}
+                                id={section.id}
+                                title={section.title}
+                                content={section.content}
+                            />
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </section>
     );
 }

@@ -71,7 +71,7 @@ export function NavigationHeader() {
                             >
                                 <Icons.logo />
                                 <div className="mb-2 mt-4 text-lg font-medium">
-                                Daeneris AI
+                                About Daeneris AI
                                 </div>
                                 <p className="text-sm leading-tight text-muted-foreground">
                                 Jarvis alike AI assistant for your business, personal life and better efficiency with technologies.
@@ -108,9 +108,9 @@ export function NavigationHeader() {
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/about" legacyBehavior passHref>
+                    <Link href="/delete-account" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                        about us
+                        Delete Account
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
