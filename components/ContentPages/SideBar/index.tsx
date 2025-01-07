@@ -12,8 +12,6 @@ export function Sidebar({ sections, contentRef, isOpen, setIsOpen }: SidebarProp
   const scrollToSection = (id: string) => {
       const element = document.getElementById(id);
       if (!element || !contentRef.current) return;
-
-      const offset = 100;
       element.scrollIntoView({ behavior: 'smooth' });
       setIsOpen(false);
   };
