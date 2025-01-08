@@ -43,7 +43,7 @@ export default function AboutPage() {
                     </div>
                 </div>
 
-                <div className="px-8 md:px-20 py-10">
+                <div className="px-1 md:px-20 py-10">
                     <motion.p 
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
