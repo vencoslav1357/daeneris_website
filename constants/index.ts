@@ -560,90 +560,107 @@ export const termsData = [
 export const aboutUsData = [
   {
     id: "intro",
-    title: "Introducing DaenerisAI",
+    title: "Meet DaenerisAI: Your Digital Ally",
     content: [
       {
         subtitle: "",
-        text: "DaenerisAI is an advanced personal AI assistant that combines cutting-edge artificial intelligence technology with intuitive controls. Similar to Jarvis from Iron Man movies, DaenerisAI will become your indispensable digital companion."
+        text: "Step into the future with DaenerisAI, your advanced personal assistant powered by state-of-the-art artificial intelligence. Inspired by the brilliance of Jarvis from the Iron Man movies, DaenerisAI isn't just a tool—it's a companion that simplifies your life and empowers your productivity."
       }
     ]
   },
   {
     id: "key-features",
-    title: "Key Features",
+    title: "Discover the Key Features",
     content: [
       {
-        subtitle: "Voice Control",
-        text: "Natural communication using advanced speech-to-text and text-to-speech technologies."
+        subtitle: "Effortless Voice Control",
+        text: "Communicate naturally through cutting-edge speech-to-text and text-to-speech technology that feels like talking to a friend."
       },
       {
-        subtitle: "Smart Integration",
-        text: "Seamless cooperation with Google Calendar, Gmail, Spotify, and other services."
+        subtitle: "Smart and Seamless Integration",
+        text: "Connect effortlessly with your favorite services using secure Google Sign-in. Your digital ecosystem, now unified."
       },
       {
-        subtitle: "Smart Home",
-        text: "Complete control of your smart home through Google Home integration."
+        subtitle: "Command Your Services",
+        text: "Use intuitive voice commands to manage your calendar, streamline your email, enjoy music on Spotify, or control Google Home devices—all with ease."
       }
     ]
   },
   {
     id: "technology",
-    title: "Technology",
+    title: "The Technology Behind DaenerisAI",
     content: [
       {
-        subtitle: "Artificial Intelligence",
-        text: "We utilize the latest GPT-4o model for natural understanding and intelligent responses."
+        subtitle: "Revolutionary Artificial Intelligence",
+        text: "At the heart of DaenerisAI lies the latest GPT-4o model, delivering intelligent, context-aware responses tailored to your needs."
       },
       {
-        subtitle: "Speech Processing",
-        text: "Advanced algorithms for speech-to-text and text-to-speech ensure fluid communication."
+        subtitle: "Uncompromising Security",
+        text: "Every interaction is protected with Google Sign-in authentication, ensuring your data stays safe while granting you powerful capabilities."
+      },
+      {
+        subtitle: "Sophisticated Speech Processing",
+        text: "Experience seamless communication with advanced algorithms that make conversations feel effortless."
       }
     ]
   },
   {
     id: "integrations",
-    title: "Integrations",
+    title: "Powerful Integrations",
     content: [
       {
         subtitle: "",
         bullets: [
-          "Google Calendar - manage your schedule",
-          "Gmail - organize emails",
-          "Spotify - control music",
-          "Google Home - smart home control",
-          "And other services for maximum productivity"
+          "📅 Google Calendar - Take control of your schedule effortlessly",
+          "📧 Gmail - Organize and respond to emails with ease",
+          "🎵 Spotify - Play, pause, and discover music like never before",
+          "🏠 Google Home - Simplify your smart home experience",
+          "And more integrations on the way, designed for maximum efficiency"
         ]
       }
     ]
   },
   {
     id: "customization",
-    title: "Customization",
+    title: "Tailored to You",
     content: [
       {
         subtitle: "",
-        text: "Every user can customize the assistant's properties according to their preferences:"
+        text: "Your assistant, your way. Personalize DaenerisAI to match your preferences and style:"
       },
       {
         subtitle: "",
         bullets: [
-          "Personality and communication style",
-          "Voice and speech tone",
-          "Preferred services and integration",
-          "Assistant's proactivity level",
-          "Notification and alert methods"
+          "💡 Personality and communication style that reflects you",
+          "🔗 Preferred services and integrations at your fingertips",
+          "📊 Adjustable proactivity for how hands-on or hands-off you want it to be",
+          "🔔 Customizable notification and alert methods to stay informed your way"
         ]
       }
     ]
   },
   {
     id: "security",
-    title: "Security",
+    title: "Security You Can Trust",
     content: [
       {
         subtitle: "",
-        text: "Your privacy is our priority. We implement state-of-the-art security measures to protect your data and provide full transparency regarding their use."
+        text: "Your data is yours, and we intend to keep it that way. DaenerisAI employs state-of-the-art security measures, including end-to-end encryption, GDPR compliance, and full transparency on how your data is used. Your privacy is not just a promise—it's our commitment."
       }
     ]
   },
+  {
+    id: "contact",
+    title: "Get in Touch with Us",
+    content: [
+      {
+        subtitle: "",
+        bullets: [
+          "📍 Dolni Horice, Porin 84",
+          "📧 daenerisai@gmail.com",
+          "We’re here to assist you. Don’t hesitate to reach out!"
+        ]
+      }
+    ]
+  }
 ];
