@@ -1,7 +1,7 @@
 'use client';
 import { ContentSection } from '@/components/ContentPages/Section';
 import { installationPageData } from '@/constants';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 
 export default function TermsAndConditionsPage() {
     const contentRef = useRef<HTMLDivElement>(null);
