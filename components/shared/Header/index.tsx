@@ -108,14 +108,11 @@ export function NavigationHeader() {
                             </Link>
                             </NavigationMenuLink>
                         </li>
-                        <ListItem href="/docs" title="Introduction">
+                        <ListItem href="/introduction" title="Introduction">
                             Learn about the project and what you can do with it.
                         </ListItem>
-                        <ListItem href="/docs/installation" title="Installation">
+                        <ListItem href="/installation" title="Installation">
                             How to install and get started with the app and add-ons.
-                        </ListItem>
-                        <ListItem href="/docs/primitives/typography" title="Production">
-                            How to build and optimize for production.
                         </ListItem>
                         </ul>
                     </NavigationMenuContent>

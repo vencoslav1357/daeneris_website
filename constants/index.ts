@@ -664,3 +664,57 @@ export const aboutUsData = [
     ]
   }
 ];
+
+export const introductionPageData = [
+  {
+    id: "welcome",
+    title: "Welcome to DaenerisAI",
+    content: [
+      {
+        subtitle: "",
+        text: "Welcome to DaenerisAI, your advanced personal assistant designed to simplify your life and boost your productivity. With cutting-edge AI technology, DaenerisAI is here to assist you with a wide range of tasks, making your daily routine more efficient and enjoyable."
+      }
+    ]
+  },
+  {
+    id: "features",
+    title: "Key Features",
+    content: [
+      {
+        subtitle: "Voice Control",
+        text: "Interact with DaenerisAI using natural voice commands, making it easy to manage your tasks hands-free."
+      },
+      {
+        subtitle: "Smart Integration",
+        text: "Seamlessly integrate with your favorite services like Google Calendar, Gmail, Spotify, and more."
+      },
+      {
+        subtitle: "Personalization",
+        text: "Customize DaenerisAI to suit your preferences, ensuring a personalized experience tailored to your needs."
+      }
+    ]
+  },
+  {
+    id: "getting-started",
+    title: "Getting Started",
+    content: [
+      {
+        subtitle: "",
+        text: "To get started with DaenerisAI, simply sign in with your Google account and follow the on-screen instructions to set up your preferences and integrations."
+      }
+    ]
+  }
+];
+
+export const installationPageData = [
+  {
+    id: "development",
+    title: "Installation",
+    content: [
+      {
+        subtitle: "",
+        text: "The DaenerisAI application is currently under development. Stay tuned for updates and the official release!"
+      }
+    ]
+  }
+];
