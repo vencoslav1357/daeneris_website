@@ -5,7 +5,6 @@ import { useRef, useState } from 'react';
 
 export default function TermsAndConditionsPage() {
     const contentRef = useRef<HTMLDivElement>(null);
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
     
     return (
         <section className="relative w-full min-h-screen flex flex-col  md:flex-row items-start justify-start pb-[5vh] dark:bg-[#151515] bg-slate-100">            
