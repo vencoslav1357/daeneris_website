@@ -18,6 +18,7 @@ export default function RootLayout({
       <html lang="en" suppressHydrationWarning>
         <head>
           <link rel="icon" href="/images/Daeneris_logo_svg.svg" />
+           <meta name="google-site-verification" content="W9QmnSG81dtfku1H2PS5hJEjHawQ2NIC5VRfq7iCYhA"/>
         </head>
         <body>
           <ThemeProvider
