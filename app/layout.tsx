@@ -19,6 +19,7 @@ export default function RootLayout({
         <head>
           <link rel="icon" href="/images/Daeneris_logo_svg.svg" />
           <meta name="google-site-verification" content="7uZFp8WyXeWp42KBMpdQe85tz1eJclIcKvFFxKUSGY4" />
+          <meta name="google-site-verification" content="GUAEtnrNkcMl-DNhGHWfrWY1hcLDepUrgM0-p9T9NE8" />
         </head>
         <body>
           <ThemeProvider
