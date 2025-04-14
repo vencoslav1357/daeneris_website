@@ -264,13 +264,23 @@ export const privacyPolicyData = [
       content: [
         {
           subtitle: "",
-          text: "Our App may contain links to third-party services or APIs (e.g., Spotify, Gmail). We are not responsible for the privacy practices of these services. We recommend reviewing their privacy policies."
+          text: "Our App may contain links to third-party services or APIs (e.g., Spotify, Google Calendar). We are not responsible for the privacy practices of these services. We recommend reviewing their privacy policies."
+        }
+      ]
+    },
+    {
+      id: "workspace-api-data",
+      title: "9. Using data from Google Workspace API",
+      content: [
+        {
+          subtitle: "",
+          text: `We do not use data obtained through Google Workspace APIs (such as Gmail, Google Calendar, etc.) to develop, improve, or train generalized AI or machine learning models. All data collected via these APIs is used solely for the functionality of the application and is not shared with third parties for AI/ML model training or any other purposes outside of the scope of the App's core services.`
         }
       ]
     },
     {
       id: "childrens-privacy",
-      title: "9. Children's Privacy",
+      title: "10. Children's Privacy",
       content: [
         {
           subtitle: "",
@@ -280,7 +290,7 @@ export const privacyPolicyData = [
     },
     {
       id: "changes",
-      title: "10. Changes to this Privacy Policy",
+      title: "11. Changes to this Privacy Policy",
       content: [
         {
           subtitle: "",
@@ -290,7 +300,7 @@ export const privacyPolicyData = [
     },
     {
         id: "contact",
-        title: "11. Contact Information",
+        title: "12. Contact Information",
         content: [
           {
             subtitle: "",
